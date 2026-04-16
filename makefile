@@ -8,7 +8,20 @@ default: all
 
 .PHONY: clean
 clean:
-	rm *.tmp
+# Remove temporary files
+	@rm --force tmp.*
+	@rm --force *.html
+	@rm --force *.log
+	@rm --force *.tmp
+	@rm --force *.txt
+# Clean doc directory
+	@rm --force doc/tmp.*    # Remove generated temporary files
+	@rm --force doc/*.1      # Remove generated manpages
+	@rm --force doc/*.3      # Remove generated manpages
+	@rm --force doc/*.html   # Remove generated HTML files
+	@rm --force doc/*.log    # Remove generatedlog files
+	@rm --force doc/*.tmp	 # Remove generated temporary files
+	@rm --force doc/*.txt    # Remove generated text files
 
 # Convert from Pandoc markdown to Github markdown.
 test.md: xt/test.md
