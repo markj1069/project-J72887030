@@ -19,7 +19,7 @@ clean:
 	@rm --force doc/*.1      # Remove generated manpages
 	@rm --force doc/*.3      # Remove generated manpages
 	@rm --force doc/*.html   # Remove generated HTML files
-	@rm --force doc/*.log    # Remove generatedlog files
+	@rm --force doc/*.log    # Remove generated log files
 	@rm --force doc/*.tmp	 # Remove generated temporary files
 	@rm --force doc/*.txt    # Remove generated text files
 
